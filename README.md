@@ -25,7 +25,7 @@
 
 <h2>Project walk-through:</h2>
    <p align="center">
-      To facilitate communication between VMs on the internal network, Adapter #2 was created and the DHCP server enabled. From there, each virtual machine was manually assigned an IP address within that subnet (LEFT). VM4 was configured with 2 network profiles, allowing it to communicate with both the internal network, and the internet through NAT (RIGHT).
+      To facilitate communication between VMs on the internal network, Adapter #2 was created and the DHCP server enabled. From there, each virtual machine was manually assigned an IP address within that subnet (LEFT). VM3 was configured with 2 network profiles allowing it to communicate with both the internal network, and VM4 externally. VM4 was configured solely using NAT. (RIGHT).
    <img src="https://imgur.com/6OBoGI3.png" height="45%" width="45%" alt="Adapter #2"/> 
    <img src="https://imgur.com/EbsMoRD.png" height="45%" width="45%" alt="VM3 2 network profiles"/>
    <img src="https://imgur.com/hUVbCAq.png" height="60%" width="60%" alt="vm addresses"/>
