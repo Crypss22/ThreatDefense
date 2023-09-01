@@ -2,10 +2,12 @@
 <img src="https://imgur.com/kpg2fwC.png" height="80%" width="80%" alt="header"/>
 </div>
 <h3>Description:</h3>
-<body>The purpose of this project was to create an internal network via Virtualbox where traffic from a Windows 11 machine was monitored, and malicious traffic prevented. Through the use of Snort and it's community rules, log files were created when an alert was triggered and forwarded by a Splunk forwarder to an external SIEM server for further threat analysis.</body>
+<body>The purpose of this project was to create an internal network via Virtualbox and simulate suspicious network activity from within that internal network onto a Windows 11 machine. The network the Windows 11 machine was operating on was monitored utilizing Snort and any malicious activity was logged and prevented through Snort's inline mode. After creating logs, a Splunk forwarder was used to relay them to an external SIEM server for further threat analysis.</body>
    </br>
    </br>
-<p>Throughout the course of this project, I ran into several roadblocks while configuring the internal network. My first issue was enabling all virtual machines on the internal network to communicate with one another. I was under the assumption that as soon as they were placed on the same internal network in the settings of each machine, manually assigned an ip address within the subnet, that they would be able to communicate. What I had figured out after not being able to ping either machine from one another was that a host-only network adapter had to created and the DHCP server configured.
+<b>Throughout the course of this project, some roadblocks I ran into were:</b></br>
+   - Creating another virtual adapter for the internal network in order to allow the flow of communication between the VMs.</br>
+   - Creating a NAT network to place both VMs 3 & 4 on in order to allow communication between the internal and external network.
 </p>
 
 
@@ -25,17 +27,16 @@
 
 <h2>Project walk-through:</h2>
    <p align="center">
-      To facilitate communication between VMs on the internal network, Adapter #2 was created and the DHCP server enabled. From there, each virtual machine was manually assigned an IP address within that subnet (LEFT). VM3 was configured with 2 network profiles allowing it to communicate with both the internal network, and VM4 externally. VM4 was configured solely using NAT. (RIGHT).
+      To facilitate communication between VMs on the internal network, Adapter #2 was created, enabling the DHCP server to distribute those IPs amongst the VMs. From there, each virtual machine was manually assigned an IP address within that subnet. VM3 was configured with 2 network profiles allowing it to communicate with both the internal network (2nd screenshot), and VM4 on the outside through NAT.
    <img src="https://imgur.com/6OBoGI3.png" height="45%" width="45%" alt="Adapter #2"/> 
-   <img src="https://imgur.com/EbsMoRD.png" height="45%" width="45%" alt="VM3 2 network profiles"/>
-   <img src="https://imgur.com/hUVbCAq.png" height="60%" width="60%" alt="vm addresses"/>
+   <img src="https://imgur.com/k4Q3nGw.png" height="55%" width="55%" alt="VM3 2 network profiles"/>
+   <img src="https://imgur.com/F6XUEbD.png" height="60%" width="60%" alt="vm addresses"/></br></br>
+<b>Above are the IP addresses of each machine.</b>
 </p>
 </br>
 </br>
-</br>
-
-<p align="center">
-   To facilitate communication between the internal and external server, VM3 had two network adapters enabled: 1 for an internal network named 'intnet', the other on NAT mode.
-<img src="https://imgur.com/D8svMBk.png" height="100%" width="100%" alt=""/>                                                 
+   <p align="center">
+      Snort was installed onto VM3 and the configuration file, snort.conf, was edited utilizing vim text editor. The HOME_NET variable was given the subnet of the internal network. 
+   </br>
+    <img src="https://imgur.com/gCfjxgN.png" height="75%" width="75%" alt="snort.conf"/>  
       </p>
-
