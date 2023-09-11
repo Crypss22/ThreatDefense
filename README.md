@@ -6,11 +6,9 @@
    </br>
    </br>
 <b>Throughout the course of this project, some roadblocks I ran into were:</b></br>
-   - Creating another virtual adapter for the internal network in order to allow the flow of communication between the VMs.</br>
+   * Figuring out that although the virtual machines were placed on the same internal network through Virtualbox's network settings, that they were still not able to communicate with each other. I had manually assigned them IPs within the same subnet, but wasn't aware that I needed to create a network adapter in order to act as a DHCP server, place those virtual machines on that virtual network, and have DHCP assign them those IPs automatically.
+   </br>
    - Creating a NAT network to place both VMs 3 & 4 on in order to allow communication between the internal and external network.
-</p>
-
-
 <h2>Utilities Used</h2>
 <b>
 - Splunk</br>
@@ -27,8 +25,9 @@
 <img src="https://imgur.com/F6XUEbD.png" height="45%" width="45%" alt="vm addresses"/>
 
 <h2>Project walk-through:</h2>
+<b>
    <p align="center">
-      To facilitate communication between VMs on the internal network, Adapter #2 was created, enabling the DHCP server to distribute those IPs amongst the VMs. From there, each virtual machine was manually assigned an IP address within that subnet. VM3 was configured with 2 network profiles allowing it to communicate with both the internal network (2nd screenshot), and VM4 on the outside through NAT.
+      To facilitate communication between VMs on the internal network, Adapter #2 was created, enabling the DHCP server to distribute those IPs amongst the VMs. From there, each virtual machine was manually assigned an IP address within that subnet. VM3 was configured with 2 network profiles allowing it to communicate with both the internal network, and VM4 on the outside through NAT (2nd screenshot).
    <img src="https://imgur.com/6OBoGI3.png" height="45%" width="45%" alt="Adapter #2"/> 
    <img src="https://imgur.com/k4Q3nGw.png" height="55%" width="55%" alt="VM3 2 network profiles"/>
 </p>
@@ -38,3 +37,15 @@
    </br>
     <img src="https://imgur.com/gCfjxgN.png" height="75%" width="75%" alt="snort.conf"/>  
       </p>
+      </br>
+      <p align="center">
+         The IP address in which the Splunk Forwarder would be forwarding it's logs to was added utilizing port 9997 which is used for splunk-to-splunk communication. Port 9997 is Splunk's default port for the transfer of data and ensures secure, reliable, and       encrypted transfer of data to prevent unathorized access.
+   </br>
+    <img src="https://imgur.com/Lhl2YOf.png" height="75%" width="75%" alt="snort.conf"/>  
+      </p>
+      <p align="center">
+         Next, I added the log file that Splunk would be forwarding to the server and that was the Snort alert file as seen below. Directly after that, I went back one directory and jumped into /etc/apps/search/local as root and added lines 1, 2, and 5-7 to assist Splunk in it's indexing process.
+   </br>
+    <img src="https://imgur.com/YkW11FB.png" height="75%" width="75%" alt="snort.conf"/>  
+      </p>
+</b>
