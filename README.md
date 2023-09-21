@@ -2,14 +2,12 @@
 <img src="https://imgur.com/kpg2fwC.png" height="80%" width="80%" alt="header"/>
 </div>
 <h3>Description:</h3>
-<body>The purpose of this project was to create an internal network via Virtualbox and simulate suspicious network activity from within that internal network onto a Windows 11 machine. The network the Windows 11 machine was operating on was monitored utilizing Snort and any malicious activity was logged and prevented through Snort's inline mode. After creating logs, a Splunk forwarder was used to relay them to an external SIEM server for further threat analysis.</body>
+<body>The purpose of this project was to create an internal network via Virtualbox and detect and log malicious activity from within the internal network. Network traffic was monitored utilizing Snort and any malicious activity was logged and prevented through Snort's inline mode. After creating logs, a Splunk forwarder was used to relay them to an external SIEM server for further analysis.</body>
    </br>
    </br>
-<b>Throughout the course of this project, some roadblocks I ran into were:</b></br>
-   * Figuring out that although the virtual machines were placed on the same internal network through Virtualbox's network settings, that they were still not able to communicate with each other. I had manually assigned them IPs within the same subnet, but wasn't aware that I needed to create a network adapter in order to act as a DHCP server, place those virtual machines on that virtual network, and have DHCP assign them those IPs automatically.
-   </br>
-   - Creating a NAT network to place both VMs 3 & 4 on in order to allow communication between the internal and external network.
-<h2>Utilities Used</h2>
+<b>During the creation of this project, a roadblock I ran into was:</b></br>
+Figuring out that although the virtual machines were placed on the same internal network through Virtualbox's network settings, that they were still not able to communicate with each other. I had manually assigned them IPs within the same subnet, but wasn't aware that I needed to create a network adapter in order to act as a DHCP server. Once that was figured out, I switched all machines on the internal network to automatically assign, receiving IPs from that DHCP server.
+<h2>Software Used</h2>
 <b>
 - Splunk</br>
 - Snort
@@ -39,7 +37,7 @@
       </p>
       </br>
       <p align="center">
-         The IP address in which the Splunk Forwarder would be forwarding it's logs to was added utilizing port 9997 which is used for splunk-to-splunk communication. Port 9997 is Splunk's default port for the transfer of data and ensures secure, reliable, and       encrypted transfer of data to prevent unathorized access.
+         The IP address in which the Splunk Forwarder would be forwarding it's logs to was added utilizing port 9997 which is used for splunk-to-splunk communication. Port 9997 is Splunk's default port for the transfer of data and ensures secure, reliable, and       encrypted transfer of data.
    </br>
     <img src="https://imgur.com/Lhl2YOf.png" height="75%" width="75%" alt="snort.conf"/>  
       </p>
