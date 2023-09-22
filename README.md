@@ -2,11 +2,15 @@
 <img src="https://imgur.com/kpg2fwC.png" height="80%" width="80%" alt="header"/>
 </div>
 <h3>Description:</h3>
-<body>The purpose of this project was to create an internal network via Virtualbox and detect and log malicious activity from within the internal network. Malicious network traffic that triggered Snort's rules were logged and relayed to an external Splunk server for further analysis.</body>
+With my Splunk certification and knowledge of Snort from TryHackMe, I wanted to dive deeper into using it in a practical setting. One idea that came to mind was combining both tools to monitor malicious network traffic from within the internal network.
+</br>
+</br>
+I setup this homelab using Virtualbox and conducted some simple reconnaissance attacks that could look suspicious. I then used Snort to monitor the network traffic and forward it utilizing a Splunk Forwarder to an external Splunk server.
+</br>
+</br>
+This project helped me to better understand how Snort could be integrated with Splunk and how both tools can assist in the security of a network.
    </br>
    </br>
-<b>During the creation of this project, a roadblock I ran into was:</b></br>
-Figuring out that although the virtual machines were placed on the same internal network through Virtualbox's network settings, that they were still not able to communicate with each other. I had manually assigned them IPs within the same subnet, but wasn't aware that I needed to create a network adapter in order to act as a DHCP server. Once that was figured out, I switched all machines on the internal network to automatically assign, receiving IPs from that DHCP server.
 <h2>Software Used</h2>
 <b>
 - Splunk</br>
@@ -46,3 +50,5 @@ Figuring out that although the virtual machines were placed on the same internal
     <img src="https://imgur.com/YkW11FB.png" height="75%" width="75%" alt="snort.conf"/>  
       </p>
 </b>
+<b>Although the setup was pretty basic, a roadblock I ran into was:</b></br>
+Figuring out that although the virtual machines were placed on the same internal network through Virtualbox's network settings, that they were still not able to communicate with each other. I had manually assigned them IPs within the same subnet, but wasn't aware that I needed to create a network adapter in order to act as a DHCP server. Once that was figured out, I switched all machines on the internal network to automatically assign, receiving IPs from that DHCP server.
