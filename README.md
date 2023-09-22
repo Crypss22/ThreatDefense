@@ -2,7 +2,7 @@
 <img src="https://imgur.com/kpg2fwC.png" height="80%" width="80%" alt="header"/>
 </div>
 <h3>Description:</h3>
-<body>The purpose of this project was to create an internal network via Virtualbox and detect and log malicious activity from within the internal network. Network traffic was monitored utilizing Snort and any malicious activity was logged and prevented through Snort's inline mode. After creating logs, a Splunk forwarder was used to relay them to an external SIEM server for further analysis.</body>
+<body>The purpose of this project was to create an internal network via Virtualbox and detect and log malicious activity from within the internal network. Malicious network traffic that triggered Snort's rules were logged and relayed to an external Splunk server for further analysis.</body>
    </br>
    </br>
 <b>During the creation of this project, a roadblock I ran into was:</b></br>
@@ -15,9 +15,8 @@ Figuring out that although the virtual machines were placed on the same internal
 <h2>Environments Used </h2>
 <b>
 - VM1 Kali Linux</br>
-- VM2 Windows 11</br>
-- VM3 Ubuntu w/ Snort and Splunk Forwarder</br>
-- VM4 Ubuntu Splunk Server</br>
+- VM2 Ubuntu w/ Snort & Splunk Forwarder</br>
+- VM3 Splunk Server</br>
 </b>
 <img src="https://imgur.com/pqYdQTW.png" height="80%" width="80%" alt="Network Diagram"/>
 <img src="https://imgur.com/F6XUEbD.png" height="45%" width="45%" alt="vm addresses"/>
