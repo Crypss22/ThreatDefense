@@ -22,8 +22,8 @@ This project helped me to better understand how Snort could be integrated with S
 - VM2 Ubuntu w/ Snort & Splunk Forwarder</br>
 - VM3 Splunk Server</br>
 </b>
-<img src="https://imgur.com/pqYdQTW.png" height="80%" width="80%" alt="Network Diagram"/>
-<img src="https://imgur.com/F6XUEbD.png" height="45%" width="45%" alt="vm addresses"/>
+<img src="https://imgur.com/abHHJic.png" height="80%" width="80%" alt="Network Diagram"/>
+<img src="https://imgur.com/g7YWWy1.png" height="45%" width="45%" alt="vm addresses"/>
 
 <h2>Project walk-through:</h2>
 <b>
