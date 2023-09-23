@@ -23,18 +23,16 @@ This project helped me to better understand how Snort could be integrated with S
 - VM3 Splunk Server</br>
 </b>
 <img src="https://imgur.com/abHHJic.png" height="80%" width="80%" alt="Network Diagram"/>
-<img src="https://imgur.com/g7YWWy1.png" height="45%" width="45%" alt="vm addresses"/>
 
 <h2>Project walk-through:</h2>
 <b>
    <p align="center">
-      To facilitate communication between VMs on the internal network, Adapter #2 was created, enabling the DHCP server to distribute those IPs amongst the VMs. From there, each virtual machine was manually assigned an IP address within that subnet. VM3 was configured with 2 network profiles allowing it to communicate with both the internal network, and VM4 on the outside through NAT (2nd screenshot).
+      To facilitate communication between VMs on the internal network, Adapter #2 was created, enabling the DHCP server to distribute those IPs amongst the VMs. From there, each virtual machine was manually assigned an IP address within that subnet. VM2 was configured with 2 network profiles allowing it to communicate with both the internal network, and the external Splunk server.
    <img src="https://imgur.com/6OBoGI3.png" height="45%" width="45%" alt="Adapter #2"/> 
-   <img src="https://imgur.com/k4Q3nGw.png" height="55%" width="55%" alt="VM3 2 network profiles"/>
 </p>
 </br>
    <p align="center">
-      Snort was installed onto VM3 and the configuration file, snort.conf, was edited utilizing vim text editor. The HOME_NET variable was given the subnet of the internal network. 
+      Snort was installed onto VM2 and the configuration file, snort.conf, was edited utilizing vim text editor. The HOME_NET variable was given the subnet of the internal network. 
    </br>
     <img src="https://imgur.com/gCfjxgN.png" height="75%" width="75%" alt="snort.conf"/>  
       </p>
