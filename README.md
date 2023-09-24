@@ -5,7 +5,7 @@
 For this project I wanted to use my knowledge of Splunk, and my knowledge of Snort from TryHackMe. I wanted to dive deeper into using both in a practical setting and one idea that came to mind was combining both tools to monitor malicious network traffic from within the internal network.
 </br>
 </br>
-I setup this homelab using Virtualbox and conducted some simple reconnaissance attacks that might raise concerns originating from inside the internal network. I then used Snort to monitor the network traffic and forward it utilizing a Splunk Forwarder to an external Splunk server.
+I setup this homelab using Virtualbox and conducted some attacks from a Kali Linux machine, originating from inside the internal network. I then used Snort to monitor the network traffic and forward it utilizing a Splunk Forwarder to an external Splunk server.
 </br>
 </br>
 This project helped me to better understand how Snort could be integrated with Splunk and how both tools can assist in the security of a network.
@@ -39,12 +39,13 @@ This project helped me to better understand how Snort could be integrated with S
     <img src="https://imgur.com/gCfjxgN.png" height="75%" width="75%" alt="snort.conf"/>  
       </p>
       </br>
-      <p align="center">
+   <p align="center">
          The IP address in which the Splunk Forwarder would be forwarding it's logs to was added utilizing port 9997 which is used for splunk-to-splunk communication. Port 9997 is Splunk's default port for the transfer of data and ensures secure, reliable, and       encrypted transfer of data.
    </br>
     <img src="https://imgur.com/Lhl2YOf.png" height="75%" width="75%" alt="splunk-forwarder"/>  
       </p>
-      <p align="center">
+</br>
+   <p align="center">
          Next, I added the log file that Splunk would be forwarding to the server and that was the Snort alert file as seen below. Directly after that, I went back one directory and jumped into /etc/apps/search/local as root and added lines 1, 2, and 5-7 to assist Splunk in it's indexing process.
    </br>
     <img src="https://imgur.com/YkW11FB.png" height="75%" width="75%" alt="monitoring file"/>  
@@ -58,16 +59,46 @@ This project helped me to better understand how Snort could be integrated with S
    </br>
     <img src="https://imgur.com/vhFfjAx.png" height="75%" width="75%" alt="splunk acc config"/>  
       </p>
+</br>
 <p align="center">
       I then configured splunk to listen on port 9997 and confirmed it as listening on that port by running the following commands. For the sole purpose of this project, pay no mind to the weak login credentials. 
    </br>
     <img src="https://imgur.com/G8sUy1n.png" height="45%" width="45%" alt="splunk listen port"/> 
     <img src="https://imgur.com/lTRasF2.png" height="45%" width="45%" alt="splunk listen port confirm"/>
       </p>
-A resource I utilized that assisted me in setting up the communication between the splunk forwarder and server was this thread from the Splunk community.
-https://community.splunk.com/t5/Getting-Data-In/How-to-activate-forwarder-server/m-p/368584/thread-id/66933
+</br>
+<p align="center">
+      Finally, our splunk server was accessed through port 8000, and I went into my Search and Reporting app. From there after clicking on the Data Summary button I was able to see and access those logs 
+   </br>
+    <img src="https://imgur.com/lcJnNvJ.gif" height="75%" width="75%" alt="splunk listen port"/>
+      </p>
+</b>
 </br>
 </br>
-   
+
+<h3 align="center">Sending & Detecting Attacks</h3>
+</br>
+<b>
+<p align="center">
+     For this portion of the project, I used a framework designed to test NIDS. I've linked the repository in the resource section.
+   </br>
+    <img src="https://imgur.com/lLofXm2.png" height="50%" width="50%" alt="splunk listen port"/>
+      </p>
+
+
+
+</b>
+</br>
+</br>
 <b>Although the setup was pretty basic, a roadblock I ran into was:</b></br>
 Figuring out that although the virtual machines were placed on the same internal network through Virtualbox's network settings, that they were still not able to communicate with each other. I had manually assigned them IPs within the same subnet, but wasn't aware that I needed to create a network adapter in order to act as a DHCP server. Once that was figured out, I switched all machines on the internal network to automatically assign, receiving IPs from that DHCP server.
+</br>
+</br>
+
+
+<h3>Resources:</h3>
+<p>
+https://community.splunk.com/t5/Getting-Data-In/How-to-activate-forwarder-server/m-p/368584/thread-id/66933
+</br>
+https://github.com/3CORESec/testmynids.org)https://github.com/3CORESec/testmynids.org
+</p>
