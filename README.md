@@ -5,7 +5,7 @@
 For this project I wanted to use my knowledge of Splunk, and my knowledge of Snort from TryHackMe. I wanted to dive deeper into using both in a practical setting and one idea that came to mind was combining both tools to monitor malicious network traffic from within the internal network.
 </br>
 </br>
-I setup this homelab using Virtualbox and conducted some attacks from a Kali Linux machine, originating from inside the internal network. I then used Snort to monitor the network traffic and forward it utilizing a Splunk Forwarder to an external Splunk server.
+I setup this homelab using Virtualbox and conducted attacks from a Kali Linux machine inside the internal network. I then used Snort to monitor the network traffic and forward it utilizing a Splunk Forwarder to an external Splunk server.
 </br>
 </br>
 This project helped me to better understand how Snort could be integrated with Splunk and how both tools can assist in the security of a network.
