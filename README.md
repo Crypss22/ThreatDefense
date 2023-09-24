@@ -27,8 +27,8 @@ This project helped me to better understand how Snort could be integrated with S
 <h2>Project walk-through:</h2>
 <b>
    <p align="center">
-      To facilitate communication between VMs on the internal network, Adapter #2 was created, enabling the DHCP server to distribute those IPs amongst the VMs. From there, each virtual machine was manually assigned an IP address within that subnet. VM2 was configured with 2 network profiles allowing it to communicate with both the internal network, and the external Splunk server.
-   <img src="https://imgur.com/6OBoGI3.png" height="45%" width="45%" alt="Adapter #2"/> 
+      To facilitate communication between VMs on the internal network, Adapter #2 was created, enabling the DHCP server to distribute those IPs amongst the VMs. From there, each virtual machine was manually assigned an IP address within that subnet. VM2 was configured with 2 network profiles allowing it to communicate with both the internal network, and the external Splunk server.</br>
+      <img src="https://imgur.com/6OBoGI3.png" height="45%" width="45%" alt="Adapter #2"/> 
 </p>
 </br>
    <h3 align="center">Configuration of Snort and Splunk Forwarder</h3>
