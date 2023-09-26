@@ -70,7 +70,7 @@ This project helped me to better understand how Snort could be integrated with S
 <p align="center">
       Finally, our splunk server was accessed through port 8000. From there I was able to access the Search and Reporting app and see the forwarded logs through the Data Summary button.
    </br>
-    <img src="https://imgur.com/lcJnNvJ.gif" height="75%" width="75%" alt="splunk listen port"/>
+    <img src="https://imgur.com/lcJnNvJ.gif" height="90%" width="90%" alt="data summary"/>
       </p>
 </b>
 </br>
@@ -80,8 +80,24 @@ This project helped me to better understand how Snort could be integrated with S
 </br>
 <b>
 <p align="center">
-     For this portion of the project, I used a framework designed to test NIDS. I've linked the repository in the resource section.
+      To confirm Snort was monitoring network activity, I sent some pings from the attackbox to the target. A simple ping originating from inside the internal network is suspicious activity and can surely raise concerns. Reconnaissance is crucial to mapping out an internal network's topology and an attacker may do so to scout a potential endpoint in which they can pivot into. Shown below is the Kali attackbox sending pings and those pings being monitored realtime through Splunk.
    </br>
+    <img src="https://imgur.com/E8RxWlE.png" height="50%" width="50%" alt="attackbox sending pings"/>
+</br>
+   Attackbox
+</br>
+   <img src="https://imgur.com/mxx0XGS.png" height="90%" width="90%" alt="splunk monitoring pings"/>
+</br>
+   Splunk server
+      </p>
+</br>
+   
+<p align="center">
+     After confirming I was actively monitoring the network, I began conducting other attacks to test Snort's IDS capabilities. For this portion of the project, I used a framework designed to test NIDS. I've linked the repository in the resource section.
+   </br>
+   </br>
+   </br>
+
     <img src="https://imgur.com/lLofXm2.png" height="50%" width="50%" alt="splunk listen port"/>
       </p>
 
