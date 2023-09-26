@@ -68,7 +68,7 @@ This project helped me to better understand how Snort could be integrated with S
       </p>
 </br>
 <p align="center">
-      Finally, our splunk server was accessed through port 8000, and I went into my Search and Reporting app. From there after clicking on the Data Summary button I was able to see and access those logs 
+      Finally, our splunk server was accessed through port 8000. From there I was able to access the Search and Reporting app and see the forwarded logs through the Data Summary button.
    </br>
     <img src="https://imgur.com/lcJnNvJ.gif" height="75%" width="75%" alt="splunk listen port"/>
       </p>
