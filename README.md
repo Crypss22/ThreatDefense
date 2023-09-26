@@ -100,5 +100,5 @@ Figuring out that although the virtual machines were placed on the same internal
 <p>
 https://community.splunk.com/t5/Getting-Data-In/How-to-activate-forwarder-server/m-p/368584/thread-id/66933
 </br>
-https://github.com/3CORESec/testmynids.org)https://github.com/3CORESec/testmynids.org
+https://github.com/3CORESec/testmynids.org
 </p>
