@@ -118,7 +118,7 @@ This project helped me to better understand how multiple security solutions can 
    </br>
     <img src="https://imgur.com/nepTrol.png" height="90%" width="90%" alt="nessus advanced scan complete"/>
     </br>
-    The scan was completed and it returned it's results with no detected vulnerabilities. Although the scan returned no vulernabilities, it's important to note that Nessus is not the say all, be all. New exploits are constantly being created and discovered and if Nessus isn't up to speed, it would not be detected.
+    The scan was completed and it returned it's results with no detected vulnerabilities. Although the scan returned no vulernabilities, it's important to note that Nessus is not the say all, be all. Since new exploits are constantly being created and discovered, Nessus' database must be updated regularly to detect them.
       </p>
       </br>
       </br>
