@@ -139,16 +139,10 @@ This project helped me to better understand how multiple security solutions can 
 </b>
 </br>
 </br>
-<b>In conclusion:</b>
-Snort and Splunk integrate with one another beautifully and help in bolstering a network's security monitoring and detection.
-
-</br>
-<b>Roadblocks I ran into were:</b></br>
-Figuring out that although the virtual machines were placed on the same internal network through Virtualbox's network settings, that they were still not able to communicate with each other. I had manually assigned them IPs within the same subnet, but wasn't aware that I needed to create a network adapter in order to act as a DHCP server. Once that was figured out, I switched all machines on the internal network to automatically assign, receiving IPs from that DHCP server.
+<h3>In conclusion:</h3>
+Snort and Splunk integrate with each other seamlessly to bolster a network's security monitoring and detection capabilities. While the project encountered some roadblocks along the way, it ultimately came full circle and proved to be effective.
 </br>
 </br>
-
-
 <h3>Resources:</h3>
 <p>
 https://community.splunk.com/t5/Getting-Data-In/How-to-activate-forwarder-server/m-p/368584/thread-id/66933
