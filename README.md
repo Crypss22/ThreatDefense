@@ -93,12 +93,10 @@ This project helped me to better understand how Snort could be integrated with S
 </br>
    
 <p align="center">
-     After confirming I was actively monitoring the network, I began conducting other attacks to test Snort's IDS capabilities. For this portion of the project, I used a framework designed to test NIDS. I've linked the repository in the resource section.
+     After confirming Snort was actively monitoring the network, I conducted vulnerability scans on the target machine. For this portion of the project, I utilized Nessus, a popular vulnerability scanner with a large database of known vulnerabilities. Nessus is great at providing more than just vulnerabilities, but information on them such as the severity and remediation.
    </br>
    </br>
-   </br>
-
-    <img src="https://imgur.com/lLofXm2.png" height="50%" width="50%" alt="splunk listen port"/>
+    <img src="https://imgur.com/SQFsQqi.png" height="80%" width="80%" alt="nessus install"/>
       </p>
 
 
@@ -115,6 +113,4 @@ Figuring out that although the virtual machines were placed on the same internal
 <h3>Resources:</h3>
 <p>
 https://community.splunk.com/t5/Getting-Data-In/How-to-activate-forwarder-server/m-p/368584/thread-id/66933
-</br>
-https://github.com/3CORESec/testmynids.org
 </p>
