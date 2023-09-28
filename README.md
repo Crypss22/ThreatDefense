@@ -140,7 +140,7 @@ This project helped me to better understand how multiple security solutions can 
 </br>
 </br>
 <h3>In conclusion:</h3>
-Snort and Splunk integrate with each other seamlessly to bolster a network's security monitoring and detection capabilities. While the project encountered some roadblocks along the way, it ultimately came full circle and proved to be effective.
+Snort and Splunk integrate with each other seamlessly to bolster a network's security monitoring and detection capabilities. The possibility of an attacker going unnoticed inside a network for quite some time is real and we see it more often everyday. With the right tools and investigative mindset, we can attempt to mitigate the amount of damage done by containment and eradication.
 </br>
 </br>
 <h3>Resources:</h3>
