@@ -89,7 +89,7 @@ This project helped me to better understand how multiple security solutions can 
 </br>
 <b>
 <p align="center">
-      To confirm Snort was monitoring network activity, I sent some pings from the attackbox to the target. A simple ping originating from inside the internal network is suspicious and will be investigated to determine if it's for malicious or legitimate purposes. Reconnaissance is crucial to mapping out an internal network's topology and an attacker may do so to scout a potential endpoint in which they can pivot into. Shown below is the Kali attackbox sending pings and those pings being monitored realtime through Splunk.
+      To confirm Snort was monitoring network activity, I sent some pings from the attackbox to the target. Reconnaissance is crucial to mapping out an internal network's topology and an attacker may do so to scout a potential endpoint in which they can pivot into. Shown below is the Kali attackbox sending pings and those pings being monitored realtime through Splunk.
    </br>
    </br>
     <img src="https://imgur.com/E8RxWlE.png" height="50%" width="50%" alt="attackbox sending pings"/>
