@@ -136,6 +136,9 @@ This project helped me to better understand how multiple security solutions can 
    </br>
    <img src="https://imgur.com/i0FNG2R.png" height="90%" width="90%" alt="misc activity"/>
       </p>
+   </br>
+   </br>
+   Conducting further analysis on the malicious traffic, we'd be able to immediately contain that endpoint in which it originated from and eradicate any attackers in our network. After containment of that endpoint, an investigation into how the attacker was able to make initial access into the network would be a top priority for preventing future incidents.
 </b>
 </br>
 </br>
