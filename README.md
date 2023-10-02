@@ -2,7 +2,7 @@
 <img src="https://imgur.com/kpg2fwC.png" height="80%" width="80%" alt="header"/>
 </div>
 <h3>Description:</h3>
-For this project I wanted to use my knowledge of Splunk, and my knowledge of Snort from TryHackMe. I wanted to dive deeper into using both in a practical setting and one idea that came to mind was combining both tools to monitor malicious network traffic from within the internal network.
+For this project I wanted to put to use my knowledge of both Splunk and Snort. I wanted to dive deeper into using both in a practical setting and one idea that came to mind was combining both tools to monitor malicious network traffic from within the internal network.
 </br>
 </br>
 I setup this homelab using Virtualbox and performed reconnaissance from within the internal network to simulate an attacker who has already accessed the network and is looking to pivot to another machine, continuing their attack. I used Snort to actively monitor the network, and forward it utilizing a Splunk Forwarder to an external server for real-time analysis.
