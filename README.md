@@ -138,7 +138,10 @@ This project helped me to better understand how multiple security solutions can 
       </p>
    </br>
    </br>
-   Conducting further analysis on the malicious traffic, we'd be able to immediately contain that endpoint in which it originated from and eradicate any attackers in our network. After containment of that endpoint, an investigation into how the attacker was able to make initial access into the network would be a top priority for preventing future incidents.
+   With an attentive mindset, such traffic originating from within the internal network should raise some concerns. After speaking with an end user in which the potentially malicious traffic came from, we'd be able to start building our investigation. 
+   </br>
+   </br>
+   If deemed malicious, we'd be able to immediately contain that endpoint in which it originated from and begin eradicating any attackers in our network. After, steps into preventing such an incident from happening again would be a top priority for preventing future incidents.
 </b>
 </br>
 </br>
