@@ -131,22 +131,18 @@ This project helped me to better understand how multiple security solutions can 
    <img src="https://imgur.com/pAPfXbM.gif" height="90%" width="90%" alt="snort alert for splunk"/>
    </br>
    </br>
-   The Snort Alert for Splunk app provided an organized interface that was easy to understand with a clean look. As seen above it organized the top 10 classifications of attacks received from the Snort IDS with Misc activity being number 1 with a 269 event count. If we go ahead and click on that, it brings us to the Search and Reporting app with a focus on just those events. Those Misc activity events were from ICMP traffic.
+   The Snort Alert for Splunk app provided an organized, clean looking interface, and was quickly easy to understand. As seen above, it organized the top 10 classifications of attacks received from the Snort IDS; Misc activity being number 1, at a 269 event count. If we go ahead and click on that, it brings us to the Search and Reporting app with a focus on just those events. Those Misc activity events were from ICMP traffic.
    </br>
    </br>
    <img src="https://imgur.com/i0FNG2R.png" height="90%" width="90%" alt="misc activity"/>
       </p>
    </br>
    </br>
-   With an attentive mindset, such traffic originating from within the internal network should raise some concerns. After speaking with an end user in which the potentially malicious traffic came from, we'd be able to start building our investigation. 
-   </br>
-   </br>
-   If deemed malicious, we'd be able to immediately contain that endpoint in which it originated from and begin eradicating any attackers in our network. After, steps into preventing such an incident from happening again would be a top priority for preventing future incidents.
 </b>
-</br>
-</br>
+
 <h3>In conclusion:</h3>
-Snort and Splunk integrate with each other seamlessly to bolster a network's security monitoring and detection capabilities. The possibility of an attacker going unnoticed inside a network for quite some time is real and we see it more often everyday. With the right tools and investigative mindset, we can attempt to mitigate the amount of damage done.
+With the development and implementation of efficient alerting and detection strategies, a strong proactive approach to monitoring systems is taken. Although threat actors continue to exploit systems through a plethora of ways, damage, if any, can be curbed.
+The goal of this project was not only create a hands-on experience, but to provide the reader with a perspective into the ease of successfully and seamlessly integrating Snort and Splunk, ultimately bolstering a networks security and providing an analyst with real-time monitoring and forensic capabilities.
 </br>
 </br>
 <h3>Resources:</h3>
