@@ -142,7 +142,7 @@ This project helped me to better understand how multiple security solutions can 
 
 <h3>In conclusion:</h3>
 With the development and implementation of efficient alerting and detection strategies, a strong proactive approach to monitoring systems is taken. Although threat actors continue to exploit systems through a plethora of ways, damage, if any, can be curbed.
-The goal of this project was not only create a hands-on experience, but to provide the reader with a perspective into the ease of successfully and seamlessly integrating Snort and Splunk, ultimately bolstering a networks security and providing an analyst with real-time monitoring and forensic capabilities.
+The goal of this project was to not only create a hands-on experience, but to provide the reader with a perspective into the ease of successfully and seamlessly integrating Snort and Splunk, ultimately bolstering a network's security and providing an analyst with real-time monitoring and forensic capabilities.
 </br>
 </br>
 <h3>Resources:</h3>
