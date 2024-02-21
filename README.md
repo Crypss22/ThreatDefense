@@ -147,7 +147,7 @@ With the development and implementation of efficient alerting and detection stra
 The goal of this project was to not only create a hands-on experience, but to provide the reader with a perspective into the ease of successfully and seamlessly integrating Snort and Splunk, ultimately bolstering a network's security and providing an analyst with real-time monitoring and forensic capabilities.
 </br>
 </br>
-<h3>Resources:</h3>
+<h3>Resources Used:</h3>
 <p>
 https://community.splunk.com/t5/Getting-Data-In/How-to-activate-forwarder-server/m-p/368584/thread-id/66933
 </p>
