@@ -1,18 +1,20 @@
 <div id="header" align="center">
 <img src="https://imgur.com/kpg2fwC.png" height="80%" width="80%" alt="header"/>
 </div>
-<h3>Description:</h3>
-For this project I wanted to put to use my knowledge of both Splunk and Snort. I wanted to dive deeper into using both in a practical setting and one idea that came to mind was combining both tools to monitor malicious network traffic from within the internal network.
+<h3>About</h3>
+Nearly everyday we see headlines that catch our attention in the cybersecurity field. Clever threat actors possessing different motives exploit vulnerabilities not just in software, but in people too. Their relentless persistence permits them with the ability to consistently gain access into networks and when one vulnerability is patched, they find another. The cybersecurity field is one large game of cat and mouse and requires us to be right everytime, where the attackers must only be right once. Gathering threat intelligence from previous attacks is crucial to security as it allows us as defenders to analyse indicators of compromise (IOCs) and create rules/signatures to prevent what tactics, techniques, and procedures a hacker has used before, from working again.
 </br>
 </br>
-I setup this homelab using Virtualbox and performed reconnaissance from within the internal network to simulate an attacker who has already accessed the network and is looking to pivot to another machine, continuing their attack. I used Snort to actively monitor the network, and forward it utilizing a Splunk Forwarder to an external server for real-time analysis.
+With threat actors becoming more sophisticated, advanced security solutions today are being developed that entail features such as machine learning. On a smaller network with less of a threat model, such security solutions can be pricey and not necessary, although one that utilizes knowledge from previous attacks (signature-based) can suffice. These signature-based solutions, such as Snort's intrusion detection and prevention system (IDPS), prove to be valuable assets in securing a network and limiting the potential impact of an incident. Unfortunately, signature-based solutions have their limitations against sophisticated threat actors who exploit zero-day vulnerabilities or exploits that have not yet been added as a rule/signature to the security solution.
 </br>
 </br>
-This project helped me to better understand how multiple security solutions can be integrated with one another and increase the security of a network.
+
+This project aims to simulate a scenario where an attacker has performed social engineering to gain authorized access into your network via valid credentials and is looking to map your network, possibly pivoting to further their attack. Reconnaissance from within the network is detected by Snort and its logs and forwarded to Splunk for alerting and real-time analysis.
    </br>
    </br>
 <h2>Software Used</h2>
 <b>
+- Virtualbox</br>
 - Splunk</br>
 - Snort</br>
 - Nessus
