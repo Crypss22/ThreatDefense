@@ -139,6 +139,7 @@ This project aims to simulate a scenario where an attacker has performed social 
    <img src="https://imgur.com/i0FNG2R.png" height="90%" width="90%" alt="misc activity"/>
       </p>
    </br>
+   Creating alerts provides us the ability to receive notifications of such traffic and allows us to respond in a timely manner. With this interface, investigating this traffic and escalating if need be is streamlined and helps an analyst be efficient. 
    </br>
 </b>
 
