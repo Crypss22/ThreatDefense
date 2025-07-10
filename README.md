@@ -9,7 +9,7 @@ With persistent threat actors conducting targeted, personalized attacks on enter
 </br>
 </br>
 
-This project aims to simulate a scenario where an attacker has performed social engineering to gain unauthorized access into your network via valid credentials and is looking to map your network, possibly pivoting to further their attack. Reconnaissance from within the network is detected by Snort and its logs are forwarded to our Splunk SIEM for for analysis.
+This project aims to simulate a scenario where an attacker has performed social engineering to gain unauthorized access into your network via valid credentials and is looking to map your network, possibly pivoting to further their attack. Reconnaissance from within the network is detected by Snort and its logs are forwarded to our Splunk SIEM for analysis.
    </br>
    </br>
 <h2>Software Used</h2>
